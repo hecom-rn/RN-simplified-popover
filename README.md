@@ -3,4 +3,4 @@
 
 ReactNative气泡组件
 
-![examplePng](https://github.com/hecom-rn/rn-simplified-popover/tree/master/example/example.png)
+[![examplePng](https://github.com/hecom-rn/rn-simplified-popover/tree/master/example/example.png)](https://github.com/hecom-rn/rn-simplified-popover/tree/master/example/example.png)
