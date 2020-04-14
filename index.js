@@ -42,12 +42,12 @@ export default class Popover extends React.Component {
         displayArea: new Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT),//展示区域
         arrowSize: DEFAULT_ARROW_SIZE,//三角大小
         placement: 'auto',//位置
-        fromRect:{x: 0, y: 0, width: 0, height: 0},//标记位置
+        fromRect: { x: 0, y: 0, width: 0, height: 0 },//标记位置
         onClose: noop,//关闭回调
     }
 
     calAttribute = {
-        popoverOrigin: new Point(SCREEN_WIDTH, 0, 0, 0),
+        popoverOrigin: new Point(SCREEN_WIDTH + SCREEN_HEIGHT, 0, 0, 0),
         anchorPoint: new Point(0, 0, 0, 0),
         placement: 'auto',
     }
@@ -57,6 +57,18 @@ export default class Popover extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    componentDidMount() {
+        Dimensions.addEventListener('change', this._onOrientationChange);
+    }
+
+    componentWillUnmount() {
+        Dimensions.removeEventListener('change', this._onOrientationChange);
+    }
+
+    _onOrientationChange = () => {
+        this.props.onClose && this.props.onClose();
+    };
 
     computeGeometry({ contentSize, placement }) {
         placement = placement || this.props.placement;
@@ -198,7 +210,7 @@ export default class Popover extends React.Component {
     render() {
         if (!this.props.isVisible) {
             this.calAttribute = {
-                popoverOrigin: new Point(SCREEN_WIDTH, 0, 0, 0),
+                popoverOrigin: new Point(SCREEN_WIDTH + SCREEN_HEIGHT, 0, 0, 0),
                 anchorPoint: new Point(0, 0, 0, 0),
                 placement: 'auto',
             }
