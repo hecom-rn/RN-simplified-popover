@@ -1,5 +1,5 @@
 {
-  "name": "rn-simplified-popover",
+  "name": "@hecom/rn-simplified-popover",
   "version": "0.0.1",
   "description": "ReactNative简化气泡组件",
   "main": "index.js",
