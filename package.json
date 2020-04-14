@@ -1,0 +1,16 @@
+{
+  "name": "rn-simplified-popover",
+  "version": "0.0.1",
+  "description": "ReactNative简化气泡组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React-Native",
+    "popover",
+    "气泡"
+  ],
+  "author": "Hecom",
+  "license": "MIT"
+}
