@@ -1,6 +1,7 @@
 # rn-simplified-popover
 
 [![npm version](https://img.shields.io/npm/v/@hecom/rn-simplified-popover.svg)](https://www.npmjs.com/package/@hecom/rn-simplified-popover)
+[![Build Status](https://travis-ci.org/hecom-rn/rn-simplified-popover.svg?branch=master)](https://travis-ci.org/hecom-rn/rn-simplified-popover)
 
 ## ReactNative气泡组件
 
