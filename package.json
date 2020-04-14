@@ -9,8 +9,7 @@
   },
   "scripts": {
     "patch": "npm version patch -m 'Bump version %s';git push origin master --tags",
-    "minor": "npm version minor -m 'Bump version %s';git push origin master --tags",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "minor": "npm version minor -m 'Bump version %s';git push origin master --tags"
   },
   "keywords": [
     "React-Native",
