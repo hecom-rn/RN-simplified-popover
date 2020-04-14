@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "ReactNative简化气泡组件",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hecom-rn/rn-simplified-popover.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +16,6 @@
     "气泡"
   ],
   "author": "Hecom",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/hecom-rn/rn-simplified-popover#readme"
 }
