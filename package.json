@@ -8,6 +8,8 @@
     "url": "https://github.com/hecom-rn/rn-simplified-popover.git"
   },
   "scripts": {
+    "patch": "npm version patch -m 'Bump version %s';git push origin master --tags",
+    "minor": "npm version minor -m 'Bump version %s';git push origin master --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,5 +19,9 @@
   ],
   "author": "Hecom",
   "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.50"
+  },
   "homepage": "https://github.com/hecom-rn/rn-simplified-popover#readme"
 }
