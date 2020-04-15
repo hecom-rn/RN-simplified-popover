@@ -6,7 +6,7 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native';
-import Popover from 'rn-simplified-popover';
+import Popover from '@hecom/rn-simplified-popover';
 
 export default class extends React.Component {
 
